@@ -10,7 +10,11 @@ const port = 3000;
 
 app.use(cache("5 minutes"));
 
-app.get("/", async (req, res) => {
+app.get("/", (req, res) => {
+  res.send("API running. <br> Call /americas to so get finance data.");
+});
+
+app.get("/americas", async (req, res) => {
   // res.send("API called!");
 
   async function getFinanceData() {
