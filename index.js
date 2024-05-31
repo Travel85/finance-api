@@ -14,6 +14,7 @@ app.get("/", (req, res) => {
   res.send("API running. <br> Call /americas to so get finance data.");
 });
 
+//TODO: add route for Asia-Pacific, Europe, Middle-East, Africa
 app.get("/americas", async (req, res) => {
   // res.send("API called!");
 
